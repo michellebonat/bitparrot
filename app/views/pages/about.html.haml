@@ -5,7 +5,7 @@
     .col-lg-12
       %h1.page-header
         About
-        %small Subheading
+        -#%small Subheading
       %ol.breadcrumb
         %li
           = link_to 'Home', root_path
@@ -14,136 +14,51 @@
   / Intro Content
   .row
     .col-md-6
-      %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
+      = link_to image_tag('jumbotron.jpg')
     .col-md-6
-      %h2 About Modern Business
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus reprehenderit dolorum!
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis?
-  / /.row
-  / Team Members
+      %h2 About Bit Parrot
+      %p This application was created because I found myself spending too much time tracking information about coding-related things I needed to be on top of (meetups, blogs, tweets, and things like that). I also wanted to find information specific to my city, without wading through lots of information ... and I also like building apps in Ruby on Rails. So rather than manually tracking all of this nefarious info I created an app to do it for me. You are welcome to use it as well.
+      %p In the future I plan to create an email that sends out information gathered by the app, so you don't need to go to this site to get updates. Sign up for that here
+      = link_to 'Sign Up', new_user_path, target: '_blank'
+      if you would like to keep updated when that is available, and tell us your city and other interests so we can keep those in mind as we build more features.
+      %p
+      = link_to "The code is open-sourced see it on GitHub.", "https://github.com/michellebonat/bitparrot"
+      %p
+      %p The app includes these things:
+      %ul.list-inline
+      %li Ruby on Rails (Rails 5)
+      %li Bootstrap 3 and Haml, because life is too short not to use Haml
+      %li A nifty template from Hoarrd called Drunken Parrot, for the style and parrot and some images
   .row
     .col-lg-12
       %h2.page-header Our Team
     .col-md-4.text-center
       .thumbnail
-        %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
+        = link_to image_tag('Bonat_new_profile_pic_bw_colorburn100.jpg')
         .caption
           %h3
-            John Smith
+            Michelle Bonat
             %br/
-            %small Job Title
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.
+            %small Creator
+          %p Developer, great parking karma.
           %ul.list-inline
             %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-facebook-square
+              %a{:href => "https://github.com/michellebonat"}
+                %i.fa.fa-2x.fa-github-square
             %li
-              %a{:href => "#"}
+              %a{:href => "https://www.linkedin.com/in/mbonat"}
                 %i.fa.fa-2x.fa-linkedin-square
             %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-twitter-square
-    .col-md-4.text-center
-      .thumbnail
-        %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
-        .caption
-          %h3
-            John Smith
-            %br/
-            %small Job Title
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.
-          %ul.list-inline
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-facebook-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-linkedin-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-twitter-square
-    .col-md-4.text-center
-      .thumbnail
-        %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
-        .caption
-          %h3
-            John Smith
-            %br/
-            %small Job Title
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.
-          %ul.list-inline
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-facebook-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-linkedin-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-twitter-square
-    .col-md-4.text-center
-      .thumbnail
-        %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
-        .caption
-          %h3
-            John Smith
-            %br/
-            %small Job Title
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.
-          %ul.list-inline
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-facebook-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-linkedin-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-twitter-square
-    .col-md-4.text-center
-      .thumbnail
-        %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
-        .caption
-          %h3
-            John Smith
-            %br/
-            %small Job Title
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.
-          %ul.list-inline
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-facebook-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-linkedin-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-twitter-square
-    .col-md-4.text-center
-      .thumbnail
-        %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
-        .caption
-          %h3
-            John Smith
-            %br/
-            %small Job Title
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.
-          %ul.list-inline
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-facebook-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-linkedin-square
-            %li
-              %a{:href => "#"}
+              %a{:href => "https://twitter.com/mbonat"}
                 %i.fa.fa-2x.fa-twitter-square
   / /.row
   / Our Customers
   .row
     .col-lg-12
-      %h2.page-header Our Customers
+      %h2.page-header
+        Our Sponsors
+        %small Blimey! These boxes are blank. Become one of the first sponsors and reach developers.
+        = link_to 'Contact Us', contact_path, target: '_blank'
     .col-md-2.col-sm-4.col-xs-6
       %img.img-responsive.customer-img{:alt => "", :src => "http://placehold.it/500x300"}/
     .col-md-2.col-sm-4.col-xs-6
