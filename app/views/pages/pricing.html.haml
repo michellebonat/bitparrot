@@ -1,0 +1,103 @@
+/ Page Content
+.container
+  / Page Heading/Breadcrumbs
+  .row
+    .col-lg-12
+      %h1.page-header
+        Pricing Table
+        %small Subheading
+      %ol.breadcrumb
+        %li
+          = link_to 'Home', root_path
+        %li.active Pricing Table
+  / /.row
+  / Content Row
+  .row
+    .col-md-4
+      .panel.panel-default.text-center
+        .panel-heading
+          %h3.panel-title Basic
+        .panel-body
+          %span.price
+            %sup> $
+            19
+            %sup 99
+          %span.period per month
+        %ul.list-group
+          %li.list-group-item
+            %strong 1
+            User
+          %li.list-group-item
+            %strong 5
+            Projects
+          %li.list-group-item
+            %strong Unlimited
+            Email Accounts
+          %li.list-group-item
+            %strong 10GB
+            Disk Space
+          %li.list-group-item
+            %strong 100GB
+            Monthly Bandwidth
+          %li.list-group-item
+            %a.btn.btn-primary{:href => "#"} Sign Up!
+    .col-md-4
+      .panel.panel-primary.text-center
+        .panel-heading
+          %h3.panel-title
+            Plus
+            %span.label.label-success Best Value
+        .panel-body
+          %span.price
+            %sup> $
+            39
+            %sup 99
+          %span.period per month
+        %ul.list-group
+          %li.list-group-item
+            %strong 10
+            User
+          %li.list-group-item
+            %strong 500
+            Projects
+          %li.list-group-item
+            %strong Unlimited
+            Email Accounts
+          %li.list-group-item
+            %strong 1000GB
+            Disk Space
+          %li.list-group-item
+            %strong 10000GB
+            Monthly Bandwidth
+          %li.list-group-item
+            %a.btn.btn-primary{:href => "#"} Sign Up!
+    .col-md-4
+      .panel.panel-default.text-center
+        .panel-heading
+          %h3.panel-title Ultra
+        .panel-body
+          %span.price
+            %sup> $
+            159
+            %sup 99
+          %span.period per month
+        %ul.list-group
+          %li.list-group-item
+            %strong Unlimted
+            Users
+          %li.list-group-item
+            %strong Unlimited
+            Projects
+          %li.list-group-item
+            %strong Unlimited
+            Email Accounts
+          %li.list-group-item
+            %strong 10000GB
+            Disk Space
+          %li.list-group-item
+            %strong Unlimited
+            Monthly Bandwidth
+          %li.list-group-item
+            %a.btn.btn-primary{:href => "#"} Sign Up!
+  / /.row
+/ /.container

@@ -1,0 +1,184 @@
+/ Page Content
+.container
+  / Page Heading/Breadcrumbs
+  .row
+    .col-lg-12
+      %h1.page-header
+        Services
+        %small Subheading
+      %ol.breadcrumb
+        %li
+          = link_to 'Home', root_path
+        %li.active Services
+  / /.row
+  / Image Header
+  .row
+    .col-lg-12
+      %img.img-responsive{:alt => "", :src => "http://placehold.it/1200x300"}/
+  / /.row
+  / Service Panels
+  / The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/
+  .row
+    .col-lg-12
+      %h2.page-header Services Panels
+    .col-md-3.col-sm-6
+      .panel.panel-default.text-center
+        .panel-heading
+          %span.fa-stack.fa-5x
+            %i.fa.fa-circle.fa-stack-2x.text-primary
+            %i.fa.fa-tree.fa-stack-1x.fa-inverse
+        .panel-body
+          %h4 Service One
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          %a.btn.btn-primary{:href => "#"} Learn More
+    .col-md-3.col-sm-6
+      .panel.panel-default.text-center
+        .panel-heading
+          %span.fa-stack.fa-5x
+            %i.fa.fa-circle.fa-stack-2x.text-primary
+            %i.fa.fa-car.fa-stack-1x.fa-inverse
+        .panel-body
+          %h4 Service Two
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          %a.btn.btn-primary{:href => "#"} Learn More
+    .col-md-3.col-sm-6
+      .panel.panel-default.text-center
+        .panel-heading
+          %span.fa-stack.fa-5x
+            %i.fa.fa-circle.fa-stack-2x.text-primary
+            %i.fa.fa-support.fa-stack-1x.fa-inverse
+        .panel-body
+          %h4 Service Three
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          %a.btn.btn-primary{:href => "#"} Learn More
+    .col-md-3.col-sm-6
+      .panel.panel-default.text-center
+        .panel-heading
+          %span.fa-stack.fa-5x
+            %i.fa.fa-circle.fa-stack-2x.text-primary
+            %i.fa.fa-database.fa-stack-1x.fa-inverse
+        .panel-body
+          %h4 Service Four
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          %a.btn.btn-primary{:href => "#"} Learn More
+  / Service Tabs
+  .row
+    .col-lg-12
+      %h2.page-header Service Tabs
+    .col-lg-12
+      %ul#myTab.nav.nav-tabs.nav-justified
+        %li.active
+          %a{"data-toggle" => "tab", :href => "#service-one"}
+            %i.fa.fa-tree
+            Service One
+        %li
+          %a{"data-toggle" => "tab", :href => "#service-two"}
+            %i.fa.fa-car
+            Service Two
+        %li
+          %a{"data-toggle" => "tab", :href => "#service-three"}
+            %i.fa.fa-support
+            Service Three
+        %li
+          %a{"data-toggle" => "tab", :href => "#service-four"}
+            %i.fa.fa-database
+            Service Four
+      #myTabContent.tab-content
+        #service-one.tab-pane.fade.active.in
+          %h4 Service One
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.
+        #service-two.tab-pane.fade
+          %h4 Service Two
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.
+        #service-three.tab-pane.fade
+          %h4 Service Three
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.
+        #service-four.tab-pane.fade
+          %h4 Service Four
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.
+  / Service List
+  / The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/
+  .row
+    .col-lg-12
+      %h2.page-header Service List
+    .col-md-4
+      .media
+        .pull-left
+          %span.fa-stack.fa-2x
+            %i.fa.fa-circle.fa-stack-2x.text-primary
+            %i.fa.fa-tree.fa-stack-1x.fa-inverse
+        .media-body
+          %h4.media-heading Service One
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.
+      .media
+        .pull-left
+          %span.fa-stack.fa-2x
+            %i.fa.fa-circle.fa-stack-2x.text-primary
+            %i.fa.fa-car.fa-stack-1x.fa-inverse
+        .media-body
+          %h4.media-heading Service Two
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.
+      .media
+        .pull-left
+          %span.fa-stack.fa-2x
+            %i.fa.fa-circle.fa-stack-2x.text-primary
+            %i.fa.fa-support.fa-stack-1x.fa-inverse
+        .media-body
+          %h4.media-heading Service Three
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.
+    .col-md-4
+      .media
+        .pull-left
+          %span.fa-stack.fa-2x
+            %i.fa.fa-circle.fa-stack-2x.text-primary
+            %i.fa.fa-database.fa-stack-1x.fa-inverse
+        .media-body
+          %h4.media-heading Service Four
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.
+      .media
+        .pull-left
+          %span.fa-stack.fa-2x
+            %i.fa.fa-circle.fa-stack-2x.text-primary
+            %i.fa.fa-bomb.fa-stack-1x.fa-inverse
+        .media-body
+          %h4.media-heading Service Five
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.
+      .media
+        .pull-left
+          %span.fa-stack.fa-2x
+            %i.fa.fa-circle.fa-stack-2x.text-primary
+            %i.fa.fa-bank.fa-stack-1x.fa-inverse
+        .media-body
+          %h4.media-heading Service Six
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.
+    .col-md-4
+      .media
+        .pull-left
+          %span.fa-stack.fa-2x
+            %i.fa.fa-circle.fa-stack-2x.text-primary
+            %i.fa.fa-paper-plane.fa-stack-1x.fa-inverse
+        .media-body
+          %h4.media-heading Service Seven
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.
+      .media
+        .pull-left
+          %span.fa-stack.fa-2x
+            %i.fa.fa-circle.fa-stack-2x.text-primary
+            %i.fa.fa-space-shuttle.fa-stack-1x.fa-inverse
+        .media-body
+          %h4.media-heading Service Eight
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.
+      .media
+        .pull-left
+          %span.fa-stack.fa-2x
+            %i.fa.fa-circle.fa-stack-2x.text-primary
+            %i.fa.fa-recycle.fa-stack-1x.fa-inverse
+        .media-body
+          %h4.media-heading Service Nine
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.
+  / /.row
+/ /.container

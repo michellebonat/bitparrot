@@ -1,0 +1,62 @@
+/ Page Content
+.container
+  / Page Heading/Breadcrumbs
+  .row
+    .col-lg-12
+      %h1.page-header
+        404
+        %small Page Not Found
+      %ol.breadcrumb
+        %li
+          = link_to 'Home', root_path
+        %li.active 404
+  / /.row
+  .row
+    .col-lg-12
+      .jumbotron
+        %h1
+          %span.error-404 404
+        %p The page you're looking for could not be found. Here are some helpful links to get you back on track:
+        %ul
+          %li
+            = link_to 'Home', root_path
+          %li
+            = link_to 'About', page_path('about')
+          %li
+            = link_to 'Services', page_path('services')
+          %li
+            = link_to 'Contact', page_path('contact')
+          %li
+            Portfolio
+            %ul
+              %li
+                = link_to '1 Column Portfolio', page_path('portfolio-1-col')
+              %li
+                = link_to '2 Column Portfolio', page_path('portfolio-2-col')
+              %li
+                = link_to '3 Column Portfolio', page_path('portfolio-3-col')
+              %li
+                = link_to '4 Column Portfolio', page_path('portfolio-4-col')
+          %li
+            Blog
+            %ul
+              %li
+                = link_to 'Blog Home 1', page_path('blog-home-1')
+              %li
+                = link_to 'Blog Home 2', page_path('blog-home-2')
+              %li
+                = link_to 'Blog Post', page_path('blog-post')
+          %li
+            Other Pages
+            %ul
+              %li
+                = link_to 'Full Width Page', page_path('full-width')
+              %li
+                = link_to 'Sidebar Page', page_path('sidebar')
+              %li
+                = link_to 'FAQ', page_path('faq')
+              %li
+                = link_to '404', page_path('404')
+              %li
+                = link_to 'Pricing Table', page_path('pricing')
+/ /.container

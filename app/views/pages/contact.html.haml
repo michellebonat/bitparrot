@@ -1,0 +1,81 @@
+/ Page Content
+.container
+  / Page Heading/Breadcrumbs
+  .row
+    .col-lg-12
+      %h1.page-header
+        Contact
+        %small Subheading
+      %ol.breadcrumb
+        %li
+          = link_to 'Home', root_path
+        %li.active Contact
+  / /.row
+  / Content Row
+  .row
+    / Map Column
+    .col-md-8
+      / Embedded Google Map
+      %iframe{:frameborder => "0", :height => "400px", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "http://maps.google.com/maps?hl=en&ie=UTF8&ll=37.0625,-95.677068&spn=56.506174,79.013672&t=m&z=4&output=embed", :width => "100%"}
+    / Contact Details Column
+    .col-md-4
+      %h3 Contact Details
+      %p
+        3481 Melrose Place
+        %br>/
+        Beverly Hills, CA 90210
+        %br/
+      %p
+        %i.fa.fa-phone
+        = succeed ":" do
+          %abbr{:title => "Phone"} P
+      %p
+        %i.fa.fa-envelope-o
+        = succeed ":" do
+          %abbr{:title => "Email"} E
+        %a{:href => "mailto:name@example.com"} name@example.com
+      %p
+        %i.fa.fa-clock-o
+        = succeed ":" do
+          %abbr{:title => "Hours"} H
+      %ul.list-unstyled.list-inline.list-social-icons
+        %li
+          %a{:href => "#"}
+            %i.fa.fa-facebook-square.fa-2x
+        %li
+          %a{:href => "#"}
+            %i.fa.fa-linkedin-square.fa-2x
+        %li
+          %a{:href => "#"}
+            %i.fa.fa-twitter-square.fa-2x
+        %li
+          %a{:href => "#"}
+            %i.fa.fa-google-plus-square.fa-2x
+  / /.row
+  / Contact Form
+  .row
+    .col-md-8
+      %h3 Send us a Message
+      %form#contactForm{:name => "sentMessage", :novalidate => ""}
+        .control-group.form-group
+          .controls
+            %label Full Name:
+            %input#name.form-control{"data-validation-required-message" => "Please enter your name.", :required => "", :type => "text"}/
+            %p.help-block
+        .control-group.form-group
+          .controls
+            %label Phone Number:
+            %input#phone.form-control{"data-validation-required-message" => "Please enter your phone number.", :required => "", :type => "tel"}/
+        .control-group.form-group
+          .controls
+            %label Email Address:
+            %input#email.form-control{"data-validation-required-message" => "Please enter your email address.", :required => "", :type => "email"}/
+        .control-group.form-group
+          .controls
+            %label Message:
+            %textarea#message.form-control{:cols => "100", "data-validation-required-message" => "Please enter your message", :maxlength => "999", :required => "", :rows => "10", :style => "resize:none"}
+        #success
+        / For success/fail messages
+        %button.btn.btn-primary{:type => "submit"} Send Message
+  / /.row
+/ /.container

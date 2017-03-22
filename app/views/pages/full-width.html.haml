@@ -1,0 +1,22 @@
+/ Page Content
+.container
+  / Page Heading/Breadcrumbs
+  .row
+    .col-lg-12
+      %h1.page-header
+        Full Width Page
+        %small Subheading
+      %ol.breadcrumb
+        %li
+          = link_to 'Home', root_path
+        %li.active Full Width Page
+  / /.row
+  / Content Row
+  .row
+    .col-lg-12
+      %p
+        Most of Start Bootstrap's unstyled templates can be directly integrated into the Modern Business template. You can view all of our unstyled templates on our website at
+        = succeed "." do
+          %a{:href => "http://startbootstrap.com/template-categories/unstyled"} http://startbootstrap.com/template-categories/unstyled
+  / /.row
+/ /.container

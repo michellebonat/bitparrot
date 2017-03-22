@@ -1,0 +1,116 @@
+/ Page Content
+.container
+  / Page Heading/Breadcrumbs
+  .row
+    .col-lg-12
+      %h1.page-header
+        Blog Post
+        %small
+          by
+          %a{:href => "#"} Start Bootstrap
+      %ol.breadcrumb
+        %li
+          = link_to 'Home', root_path
+        %li.active Blog Post
+  / /.row
+  / Content Row
+  .row
+    / Blog Post Content Column
+    .col-lg-8
+      / Blog Post
+      %hr/
+      / Date/Time
+      %p
+        %i.fa.fa-clock-o
+        Posted on August 24, 2013 at 9:00 PM
+      %hr/
+      / Preview Image
+      %img.img-responsive{:alt => "", :src => "http://placehold.it/900x300"}/
+      %hr/
+      / Post Content
+      %p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!
+      %hr/
+      / Blog Comments
+      / Comments Form
+      .well
+        %h4 Leave a Comment:
+        %form{:role => "form"}
+          .form-group
+            %textarea.form-control{:rows => "3"}
+          %button.btn.btn-primary{:type => "submit"} Submit
+      %hr/
+      / Posted Comments
+      / Comment
+      .media
+        %a.pull-left{:href => "#"}
+          %img.media-object{:alt => "", :src => "http://placehold.it/64x64"}/
+        .media-body
+          %h4.media-heading
+            Start Bootstrap
+            %small August 25, 2014 at 9:30 PM
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      / Comment
+      .media
+        %a.pull-left{:href => "#"}
+          %img.media-object{:alt => "", :src => "http://placehold.it/64x64"}/
+        .media-body
+          %h4.media-heading
+            Start Bootstrap
+            %small August 25, 2014 at 9:30 PM
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          / Nested Comment
+          .media
+            %a.pull-left{:href => "#"}
+              %img.media-object{:alt => "", :src => "http://placehold.it/64x64"}/
+            .media-body
+              %h4.media-heading
+                Nested Start Bootstrap
+                %small August 25, 2014 at 9:30 PM
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          / End Nested Comment
+    / Blog Sidebar Widgets Column
+    .col-md-4
+      / Blog Search Well
+      .well
+        %h4 Blog Search
+        .input-group
+          %input.form-control{:type => "text"}/
+          %span.input-group-btn
+            %button.btn.btn-default{:type => "button"}
+              %i.fa.fa-search
+        / /.input-group
+      / Blog Categories Well
+      .well
+        %h4 Blog Categories
+        .row
+          .col-lg-6
+            %ul.list-unstyled
+              %li
+                %a{:href => "#"} Category Name
+              %li
+                %a{:href => "#"} Category Name
+              %li
+                %a{:href => "#"} Category Name
+              %li
+                %a{:href => "#"} Category Name
+          .col-lg-6
+            %ul.list-unstyled
+              %li
+                %a{:href => "#"} Category Name
+              %li
+                %a{:href => "#"} Category Name
+              %li
+                %a{:href => "#"} Category Name
+              %li
+                %a{:href => "#"} Category Name
+        / /.row
+      / Side Widget Well
+      .well
+        %h4 Side Widget Well
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.
+  / /.row
+/ /.container

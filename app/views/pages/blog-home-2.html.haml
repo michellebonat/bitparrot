@@ -1,0 +1,84 @@
+/ Page Content
+.container
+  .row
+    .col-lg-12
+      %h1.page-header
+        Blog Home Two
+        %small Subheading
+      %ol.breadcrumb
+        %li
+          = link_to 'Home', root_path
+        %li.active Blog Home Two
+  / /.row
+  / Blog Post Row
+  .row
+    .col-md-1.text-center
+      %p
+        %i.fa.fa-camera.fa-4x
+      %p June 17, 2014
+    .col-md-5
+      = link_to page_path('blog-post') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/600x300"}/
+    .col-md-6
+      %h3
+        = link_to 'Blog Post Title', page_path('blog-post')
+      %p
+        by
+        %a{:href => "#"} Start Bootstrap
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      = link_to page_path('blog-post') do
+        Read More
+        %i.fa.fa-angle-right
+  / /.row
+  %hr/
+  / Blog Post Row
+  .row
+    .col-md-1.text-center
+      %p
+        %i.fa.fa-film.fa-4x
+      %p June 17, 2014
+    .col-md-5
+      = link_to page_path('blog-post') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/600x300"}/
+    .col-md-6
+      %h3
+        = link_to 'Blog Post Title', page_path('blog-post')
+      %p
+        by
+        %a{:href => "#"} Start Bootstrap
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      = link_to page_path('blog-post') do
+        Read More
+        %i.fa.fa-angle-right
+  / /.row
+  %hr/
+  / Blog Post Row
+  .row
+    .col-md-1.text-center
+      %p
+        %i.fa.fa-file-text.fa-4x
+      %p June 17, 2014
+    .col-md-5
+      = link_to page_path('blog-post') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/600x300"}/
+    .col-md-6
+      %h3
+        = link_to 'Blog Post Title', page_path('blog-post')
+      %p
+        by
+        %a{:href => "#"} Start Bootstrap
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      = link_to page_path('blog-post') do
+        Read More
+        %i.fa.fa-angle-right
+  / /.row
+  %hr/
+  / Pager
+  .row
+    %ul.pager
+      %li.previous
+        %a{:href => "#"} ← Older
+      %li.next
+        %a{:href => "#"} Newer →
+  / /.row
+  / /.container

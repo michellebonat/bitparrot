@@ -1,0 +1,96 @@
+/ Page Content
+.container
+  / Page Heading/Breadcrumbs
+  .row
+    .col-lg-12
+      %h1.page-header
+        Three Column Portfolio
+        %small Subheading
+      %ol.breadcrumb
+        %li
+          = link_to 'Home', root_path
+        %li.active Three Column Portfolio
+  / /.row
+  / Projects Row
+  .row
+    .col-md-4.img-portfolio
+      = link_to page_path('portfolio-item') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
+      %h3
+        = link_to 'Project Name', page_path('portfolio-item')
+      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    .col-md-4.img-portfolio
+      = link_to page_path('portfolio-item') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
+      %h3
+        = link_to 'Project Name', page_path('portfolio-item')
+      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    .col-md-4.img-portfolio
+      = link_to page_path('portfolio-item') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
+      %h3
+        = link_to 'Project Name', page_path('portfolio-item')
+      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+  / /.row
+  / Projects Row
+  .row
+    .col-md-4.img-portfolio
+      = link_to page_path('portfolio-item') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
+      %h3
+        = link_to 'Project Name', page_path('portfolio-item')
+      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    .col-md-4.img-portfolio
+      = link_to page_path('portfolio-item') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
+      %h3
+        = link_to 'Project Name', page_path('portfolio-item')
+      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    .col-md-4.img-portfolio
+      = link_to page_path('portfolio-item') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
+      %h3
+        = link_to 'Project Name', page_path('portfolio-item')
+      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+  / Projects Row
+  .row
+    .col-md-4.img-portfolio
+      = link_to page_path('portfolio-item') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
+      %h3
+        = link_to 'Project Name', page_path('portfolio-item')
+      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    .col-md-4.img-portfolio
+      = link_to page_path('portfolio-item') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
+      %h3
+        = link_to 'Project Name', page_path('portfolio-item')
+      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    .col-md-4.img-portfolio
+      = link_to page_path('portfolio-item') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
+      %h3
+        = link_to 'Project Name', page_path('portfolio-item')
+      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+  / /.row
+  %hr/
+  / Pagination
+  .row.text-center
+    .col-lg-12
+      %ul.pagination
+        %li
+          %a{:href => "#"} «
+        %li.active
+          %a{:href => "#"} 1
+        %li
+          %a{:href => "#"} 2
+        %li
+          %a{:href => "#"} 3
+        %li
+          %a{:href => "#"} 4
+        %li
+          %a{:href => "#"} 5
+        %li
+          %a{:href => "#"} »
+  / /.row
+/ /.container

@@ -1,0 +1,63 @@
+/ Page Content
+.container
+  / Page Heading/Breadcrumbs
+  .row
+    .col-lg-12
+      %h1.page-header
+        Portfolio Item
+        %small Subheading
+      %ol.breadcrumb
+        %li
+          = link_to 'Home', root_path
+        %li.active Portfolio Item
+  / /.row
+  / Portfolio Item Row
+  .row
+    .col-md-8
+      #carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
+        / Indicators
+        %ol.carousel-indicators
+          %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+          %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+          %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+        / Wrapper for slides
+        .carousel-inner
+          .item.active
+            %img.img-responsive{:alt => "", :src => "http://placehold.it/750x500"}/
+          .item
+            %img.img-responsive{:alt => "", :src => "http://placehold.it/750x500"}/
+          .item
+            %img.img-responsive{:alt => "", :src => "http://placehold.it/750x500"}/
+        / Controls
+        %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic"}
+          %span.glyphicon.glyphicon-chevron-left
+        %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic"}
+          %span.glyphicon.glyphicon-chevron-right
+    .col-md-4
+      %h3 Project Description
+      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.
+      %h3 Project Details
+      %ul
+        %li Lorem Ipsum
+        %li Dolor Sit Amet
+        %li Consectetur
+        %li Adipiscing Elit
+  / /.row
+  / Related Projects Row
+  .row
+    .col-lg-12
+      %h3.page-header Related Projects
+    .col-sm-3.col-xs-6
+      %a{:href => "#"}
+        %img.img-responsive.img-hover.img-related{:alt => "", :src => "http://placehold.it/500x300"}/
+    .col-sm-3.col-xs-6
+      %a{:href => "#"}
+        %img.img-responsive.img-hover.img-related{:alt => "", :src => "http://placehold.it/500x300"}/
+    .col-sm-3.col-xs-6
+      %a{:href => "#"}
+        %img.img-responsive.img-hover.img-related{:alt => "", :src => "http://placehold.it/500x300"}/
+    .col-sm-3.col-xs-6
+      %a{:href => "#"}
+        %img.img-responsive.img-hover.img-related{:alt => "", :src => "http://placehold.it/500x300"}/
+  / /.row
+/ /.container
