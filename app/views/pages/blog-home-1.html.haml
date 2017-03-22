@@ -1,0 +1,117 @@
+/ Page Content
+.container
+  / Page Heading/Breadcrumbs
+  .row
+    .col-lg-12
+      %h1.page-header
+        Blog Home One
+        %small Subheading
+      %ol.breadcrumb
+        %li
+          = link_to 'Home', root_path
+        %li.active Blog Home One
+  / /.row
+  .row
+    / Blog Entries Column
+    .col-md-8
+      / First Blog Post
+      %h2
+        %a{:href => "#"} Blog Post Title
+      %p.lead
+        by #{link_to 'Start Bootstrap', root_path}
+      %p
+        %i.fa.fa-clock-o
+        Posted on August 28, 2013 at 10:00 PM
+      %hr/
+      = link_to page_path('blog-post') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/900x300"}/
+      %hr/
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.
+      = link_to page_path('blog-post'), class: 'btn btn-primary' do
+        Read More
+        %i.fa.fa-angle-right
+      %hr/
+      / Second Blog Post
+      %h2
+        %a{:href => "#"} Blog Post Title
+      %p.lead
+        by #{link_to 'Start Bootstrap', root_path}
+      %p
+        %i.fa.fa-clock-o
+        Posted on August 28, 2013 at 10:45 PM
+      %hr/
+      = link_to page_path('blog-post') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/900x300"}/
+      %hr/
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quasi, fugiat, asperiores harum voluptatum tenetur a possimus nesciunt quod accusamus saepe tempora ipsam distinctio minima dolorum perferendis labore impedit voluptates!
+      = link_to page_path('blog-post'), class: 'btn btn-primary' do
+        Read More
+        %i.fa.fa-angle-right
+      %hr/
+      / Third Blog Post
+      %h2
+        %a{:href => "#"} Blog Post Title
+      %p.lead
+        by #{link_to 'Start Bootstrap', root_path}
+      %p
+        %i.fa.fa-clock-o
+        Posted on August 28, 2013 at 10:45 PM
+      %hr/
+      = link_to page_path('blog-post') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/900x300"}/
+      %hr/
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptates, voluptas dolore ipsam cumque quam veniam accusantium laudantium adipisci architecto itaque dicta aperiam maiores provident id incidunt autem. Magni, ratione.
+      = link_to page_path('blog-post'), class: 'btn btn-primary' do
+        Read More
+        %i.fa.fa-angle-right
+      %hr/
+      / Pager
+      %ul.pager
+        %li.previous
+          %a{:href => "#"} ← Older
+        %li.next
+          %a{:href => "#"} Newer →
+    / Blog Sidebar Widgets Column
+    .col-md-4
+      / Blog Search Well
+      .well
+        %h4 Blog Search
+        .input-group
+          %input.form-control{:type => "text"}/
+          %span.input-group-btn
+            %button.btn.btn-default{:type => "button"}
+              %i.fa.fa-search
+        / /.input-group
+      / Blog Categories Well
+      .well
+        %h4 Blog Categories
+        .row
+          .col-lg-6
+            %ul.list-unstyled
+              %li
+                %a{:href => "#"} Category Name
+              %li
+                %a{:href => "#"} Category Name
+              %li
+                %a{:href => "#"} Category Name
+              %li
+                %a{:href => "#"} Category Name
+          / /.col-lg-6
+          .col-lg-6
+            %ul.list-unstyled
+              %li
+                %a{:href => "#"} Category Name
+              %li
+                %a{:href => "#"} Category Name
+              %li
+                %a{:href => "#"} Category Name
+              %li
+                %a{:href => "#"} Category Name
+          / /.col-lg-6
+        / /.row
+      / Side Widget Well
+      .well
+        %h4 Side Widget Well
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.
+  / /.row
+/ /.container

@@ -1,0 +1,93 @@
+/ Page Content
+.container
+  / Page Heading/Breadcrumbs
+  .row
+    .col-lg-12
+      %h1.page-header
+        One Column Portfolio
+        %small Subheading
+      %ol.breadcrumb
+        %li
+          = link_to 'Home', root_path
+        %li.active One Column Portfolio
+  / /.row
+  / Project One
+  .row
+    .col-md-7
+      = link_to page_path('portfolio-item') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x300"}/
+    .col-md-5
+      %h3 Project One
+      %h4 Subheading
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+      = link_to 'View Project', page_path('portfolio-item'), class: 'btn btn-primary'
+  / /.row
+  %hr/
+  / Project Two
+  .row
+    .col-md-7
+      = link_to page_path('portfolio-item') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x300"}/
+    .col-md-5
+      %h3 Project Two
+      %h4 Subheading
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.
+      = link_to 'View Project', page_path('portfolio-item'), class: 'btn btn-primary'
+  / /.row
+  %hr/
+  / Project Three
+  .row
+    .col-md-7
+      = link_to page_path('portfolio-item') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x300"}/
+    .col-md-5
+      %h3 Project Three
+      %h4 Subheading
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!
+      = link_to 'View Project', page_path('portfolio-item'), class: 'btn btn-primary'
+  / /.row
+  %hr/
+  / Project Four
+  .row
+    .col-md-7
+      = link_to page_path('portfolio-item') do
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x300"}/
+    .col-md-5
+      %h3 Project Four
+      %h4 Subheading
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?
+      = link_to 'View Project', page_path('portfolio-item'), class: 'btn btn-primary'
+  / /.row
+  %hr/
+  / Project Five
+  .row
+    .col-md-7
+      %a{:href => "#"}
+        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x300"}/
+    .col-md-5
+      %h3 Project Five
+      %h4 Subheading
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.
+      %a.btn.btn-primary{:href => "#"} View Project
+  / /.row
+  %hr/
+  / Pagination
+  .row.text-center
+    .col-lg-12
+      %ul.pagination
+        %li
+          %a{:href => "#"} «
+        %li.active
+          %a{:href => "#"} 1
+        %li
+          %a{:href => "#"} 2
+        %li
+          %a{:href => "#"} 3
+        %li
+          %a{:href => "#"} 4
+        %li
+          %a{:href => "#"} 5
+        %li
+          %a{:href => "#"} »
+  / /.row
+/ /.container
