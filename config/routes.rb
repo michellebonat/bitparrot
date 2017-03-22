@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users
 
-  get 'about', to: 'pages#about'
+  get "/pages/:page" => "pages#show"
 end
