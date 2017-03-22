@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   get "/pages/:page" => "pages#show"
   get 'pages/about', to: 'pages#about', as: :about
+  get 'pages/faq', to: 'pages#faq', as: :faq
+  get 'pages/contact', to: 'pages#contact', as: :contact
 end
