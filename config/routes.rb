@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :users
 
   get "/pages/:page" => "pages#show"
+  get "/pages/:about" => "pages#about"
 end
