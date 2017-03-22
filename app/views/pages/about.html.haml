@@ -19,10 +19,12 @@
       %h2 About Bit Parrot
       %p This application was created because I found myself spending too much time tracking information about coding-related things I needed to be on top of (meetups, blogs, tweets, and things like that). I also wanted to find information specific to my city, without wading through lots of information ... and I also like building apps in Ruby on Rails. So rather than manually tracking all of this nefarious info I created an app to do it for me. You are welcome to use it as well.
       %p In the future I plan to create an email that sends out information gathered by the app, so you don't need to go to this site to get updates. Sign up for that here if you would like to keep updated when that is available, and tell us your city and other interests so we can keep those in mind as we build more features.
-      %p The code is open sources on GitHub see it here
+      = link_to "The code is open-sourced see it on GitHub.", "https://github.com/michellebonat/bitparrot"
+      %p
+      %p The app includes these things:
       %ul.list-inline
       %li Ruby on Rails (Rails 5)
-      %li Boostrap 3 and Haml (because life is too short not to use Haml)
+      %li Boostrap 3 and Haml, because life is too short not to use Haml
       %li A nifty template from Hoarrd called Drunken Parrot, for the style and parrot and some images
   .row
     .col-lg-12
@@ -52,7 +54,8 @@
     .col-lg-12
       %h2.page-header
         Our Sponsors
-        %small Blimey! These boxes are blank. Become one of the first sponsors and reach developers. Contact Us
+        %small Blimey! These boxes are blank. Become one of the first sponsors and reach developers.
+        = link_to 'Contact Us', contact_path, target: '_blank'
     .col-md-2.col-sm-4.col-xs-6
       %img.img-responsive.customer-img{:alt => "", :src => "http://placehold.it/500x300"}/
     .col-md-2.col-sm-4.col-xs-6
