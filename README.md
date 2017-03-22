@@ -1,24 +1,50 @@
-# README
+Bitparrot
+================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-Things you may want to cover:
+This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
+provided by the [RailsApps Project](http://railsapps.github.io/).
 
-* Ruby version
+Rails Composer is supported by developers who purchase our RailsApps tutorials.
 
-* System dependencies
+Problems? Issues?
+-----------
 
-* Configuration
+Need help? Ask on Stack Overflow with the tag 'railsapps.'
 
-* Database creation
+Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
 
-* Database initialization
+If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
+and include the diagnostics.
 
-* How to run the test suite
+Ruby on Rails
+-------------
 
-* Services (job queues, cache servers, search engines, etc.)
+This application requires:
 
-* Deployment instructions
+- Ruby 2.3.1
+- Rails 5.0.2
 
-* ...
+Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
+
+Getting Started
+---------------
+
+Documentation and Support
+-------------------------
+
+Issues
+-------------
+
+Similar Projects
+----------------
+
+Contributing
+------------
+
+Credits
+-------
+
+License
+-------
