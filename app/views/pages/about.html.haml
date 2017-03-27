@@ -57,8 +57,15 @@
     .col-lg-12
       %h2.page-header
         Our Sponsors
-        %small Blimey! These boxes are blank. Become one of the first sponsors and reach developers.
-        = link_to 'Contact Us', contact_path, target: '_blank'
+        %p
+        %small
+          Blimey! These boxes are blank. Become one of the first sponsors and reach developers.
+        %p Send us a message on Twitter
+        %ul.list-inline
+          %li
+            %a{:href => "https://twitter.com/bit-parrot"}
+              %i.fa.fa-2x.fa-twitter-square
+        -#= link_to 'Contact Us', contact_path, target: '_blank'
     .col-md-2.col-sm-4.col-xs-6
       %img.img-responsive.customer-img{:alt => "", :src => "http://placehold.it/500x300"}/
     .col-md-2.col-sm-4.col-xs-6
