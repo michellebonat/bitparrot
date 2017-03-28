@@ -109,9 +109,9 @@
     .well
       .row
         .col-md-8
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.
+          %p We're building this out, and plan to add a regular email send for the aggregated info, so you don't have to check this site. Sign up to be first to get that when it's ready.
         .col-md-4
-          %a.btn.btn-lg.btn-default.btn-block{:href => "#"} Call to Action
+          = link_to 'Sign Up Now', new_user_registration_path, class: 'btn btn-lg btn-primary'
   / /.container
   / Script to Activate the Carousel
   :javascript
