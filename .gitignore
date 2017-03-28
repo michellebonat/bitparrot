@@ -135,3 +135,6 @@ pickle-email-*.html
 # tilde files are usually backup files from a text editor
 *~
 >>>>>>> rails_apps_composer: initial commit
+
+# Ignore application configuration
+/config/application.yml
