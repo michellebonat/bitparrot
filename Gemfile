@@ -13,7 +13,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'twitter'
-gem "figaro"
+gem 'figaro'
 gem 'twitter'
 
 group :development, :test do
