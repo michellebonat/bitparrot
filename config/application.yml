@@ -9,9 +9,3 @@
 # production:
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
-
-# Twitter API
-CONFIG_CONSUMER_KEY: "OobsuyybNB8toYtMAXJmYtprh"
-CONFIG_CONSUMER_SECRET: "NUtF7l3M315GjLL2RZOARZbCLdTzl8zSbRq0hQHKHh3ZBbr1uI"
-CONFIG_ACCESS_TOKEN: "834841611615866880-fzwEhqhidPk8XLHZ3tAyp2KXklQw8xr"
-CONFIG_ACCESS_TOKEN_SECRET: "Hn8O5NrHE1Ggk1pVJ4kX2DqgJPeSX4egOz7mCDd0Teug0"
