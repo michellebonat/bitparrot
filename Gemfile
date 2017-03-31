@@ -14,7 +14,6 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'twitter'
 gem 'figaro'
-gem 'twitter'
 
 group :development, :test do
   gem 'byebug', platform: :mri
