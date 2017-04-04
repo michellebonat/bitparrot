@@ -36,6 +36,9 @@
       .col-lg-12
         %h1.page-header
           (Under Construction) Aggregated info streams for developers to easily track what they care about
+        %h2
+          Ruby On Rails News
+          (Tweets from @RubyonRailsNews)
         %ul
           - TwitterApi.public_tweets.each do |tweet|
             %li= tweet.text
