@@ -1,6 +1,6 @@
 class TwitterApi
     def self.public_tweets
-        client.user_timeline('rubyonrailsnews', count: 1, exclude_replies: true, include_rts: false)
+        client.user_timeline('rubyonrailsnews', count: 10, exclude_replies: true, include_rts: false)
     end
 
     def self.client
