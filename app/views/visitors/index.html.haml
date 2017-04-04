@@ -35,7 +35,27 @@
     .row
       .col-lg-12
         %h1.page-header
-          (Under Construction) Aggregated info streams for developers to easily track what they care about
+          (In Process) Aggregated info streams for developers to easily track what they care about
+        %h2
+          Refresh page to reload for current tweets
+        %h2
+          Ruby On Rails News
+          (Tweets from @RubyonRailsNews)
+        %ul
+          - TwitterApi.rornews_tweets.each do |tweet|
+            %li= tweet.text
+        %h2
+          Ruby On Rails Content
+          (Tweets from @RubyonRRails)
+        %ul
+          - TwitterApi.railscontent_tweets.each do |tweet|
+            %li= tweet.text
+        %h2
+          Ruby On Rails Content
+          (Tweets from @rorjobs)
+        %ul
+          - TwitterApi.rorjobs_tweets.each do |tweet|
+            %li= tweet.text
     -#  .col-md-4
     -#    .panel.panel-default
     -#      .panel-heading
