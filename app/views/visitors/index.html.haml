@@ -36,6 +36,9 @@
       .col-lg-12
         %h1.page-header
           (Under Construction) Aggregated info streams for developers to easily track what they care about
+        %ul
+          - TwitterApi.public_tweets.each do |tweet|
+            %li= tweet.text
     -#  .col-md-4
     -#    .panel.panel-default
     -#      .panel-heading
