@@ -48,6 +48,12 @@
         %ul
           - TwitterApi.railscontent_tweets.each do |tweet|
             %li= tweet.text
+        %h2
+          Ruby On Rails Content
+          (Tweets from @rorjobs)
+        %ul
+          - TwitterApi.rorjobs_tweets.each do |tweet|
+            %li= tweet.text
     -#  .col-md-4
     -#    .panel.panel-default
     -#      .panel-heading
