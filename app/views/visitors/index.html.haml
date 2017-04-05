@@ -11,7 +11,7 @@
         .fill
           = link_to image_tag('jumbotron.jpg')
         .carousel-caption
-          %h2 Ahoy
+          %h2 For developers to easily track the info they need
       / <div class="item">
       / <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
       / <div class="carousel-caption">
@@ -35,12 +35,12 @@
     .row
       .col-lg-12
         %h1.page-header
-          (In Process) Aggregated info streams for developers to easily track what they care about
-        %h2
-          Refresh page to reload for current tweets
+          Ruby On Rails Info Stream
+          %small Refresh page to reload current posts
         %h2
           Ruby On Rails News
-          (Tweets from @RubyonRailsNews)
+          %h3
+            Tweets from @RubyonRailsNews
         %ul
           - TwitterApi.rornews_tweets.each do |tweet|
             %li= parsed_tweet tweet
@@ -97,7 +97,7 @@
     .well
       .row
         .col-md-8
-          %p We're adding email sends for the aggregated info, so you don't have to check this site. Sign up to be first to receive when ready.
+          %p We'll be adding email sends for this content, so you don't have to check this site. Sign up to receive when ready.
         .col-md-4
           = link_to 'Sign Up Now', new_user_registration_path, class: 'btn btn-lg btn-success'
   / /.container
