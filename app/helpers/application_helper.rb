@@ -6,5 +6,7 @@ module ApplicationHelper
       html_link = link_to(entity.display_url.to_s, entity.expanded_url.to_s, target: '_blank')
       _parsed_tweet.sub!(entity.url.to_s, html_link)
     end
+
+    _parsed_tweet
   end
 end
