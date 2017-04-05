@@ -36,23 +36,25 @@
       .col-lg-12
         %h1.page-header
           Ruby On Rails Info Stream
-          %small Refresh page to reload current posts
+          %small.pull-right Refresh page to update posts
         %h2
           Ruby On Rails News
-          %h3
+          %h4
             Tweets from @RubyonRailsNews
         %ul
           - TwitterApi.rornews_tweets.each do |tweet|
             %li= parsed_tweet tweet
         %h2
           Ruby On Rails Content
-          (Tweets from @RubyonRRails)
+          %h4
+            Tweets from @RubyonRRails
         %ul
           - TwitterApi.railscontent_tweets.each do |tweet|
             %li= parsed_tweet tweet
         %h2
-          Ruby On Rails Content
-          (Tweets from @rorjobs)
+          Ruby On Rails Jobs
+          %h4
+            Tweets from @rorjobs
         %ul
           - TwitterApi.rorjobs_tweets.each do |tweet|
             %li= parsed_tweet tweet
