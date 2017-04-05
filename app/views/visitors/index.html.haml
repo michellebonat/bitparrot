@@ -43,7 +43,7 @@
           (Tweets from @RubyonRailsNews)
         %ul
           - TwitterApi.rornews_tweets.each do |tweet|
-            %li= tweet.text
+            %li= parsed_tweet tweet
         %h2
           Ruby On Rails Content
           (Tweets from @RubyonRRails)
