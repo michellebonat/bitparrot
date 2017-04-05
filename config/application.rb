@@ -8,7 +8,7 @@ Bundler.require(*Rails.groups)
 
 module Bitparrot
   class Application < Rails::Application
-    config.autoload_paths << Rails.root.join('lib')
+    config.eager_load_paths << Rails.root.join('lib')
 
     config.generators do |g|
       g.test_framework :rspec,
