@@ -7,6 +7,6 @@ module ApplicationHelper
       _parsed_tweet.sub!(entity.url.to_s, html_link)
     end
 
-    _parsed_tweet
+    _parsed_tweet.html_safe
   end
 end
