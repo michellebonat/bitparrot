@@ -1,0 +1,55 @@
+%body
+  %header#myCarousel.carousel.slide
+    / Wrapper for slides
+    .carousel-inner
+      .item.active
+        .fill
+          = link_to image_tag('jumbotron.jpg')
+        .carousel-caption
+          %h2 Track Stocks
+  / Page Content
+  .container
+    / Marketing Icons Section
+    .row
+      .col-lg-12
+        %h1.page-header
+          Streaming Stock Information
+          %small.pull-right Refresh page to update
+        -#%h2
+        -#  Ruby On Rails News
+        -#  %h4
+        -#    Tweets from @RubyonRailsNews
+        -#%ul
+        -#  - TwitterApi.rornews_tweets.each do |tweet|
+        -#    %li= parsed_tweet tweet
+        -#%h2
+        -#  Ruby On Rails Content
+        -#  %h4
+        -#    Tweets from @RubyonRRails
+        -#%ul
+        -#  - TwitterApi.railscontent_tweets.each do |tweet|
+        -#    %li= parsed_tweet tweet
+        -#%h2
+        -#  Ruby On Rails Jobs
+        -#  %h4
+        -#    Tweets from @rorjobs
+        -#%ul
+        -#  - TwitterApi.rorjobs_tweets.each do |tweet|
+        -#    %li= parsed_tweet tweet
+    / /.row
+    %hr/
+    / Call to Action Section
+    .well
+      .row
+        .col-md-8
+          %p Email content sends coming soon, sign up to receive when ready.
+        .col-md-4
+          = link_to 'Sign Up Now', new_user_registration_path, class: 'btn btn-lg btn-success'
+  / /.container
+  / Script to Activate the Carousel
+  :javascript
+    $(document).on('ready', function () {
+      $('.carousel').carousel({
+          interval: 1000 //changes the speed
+      })
+    });
