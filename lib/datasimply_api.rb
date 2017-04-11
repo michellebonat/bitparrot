@@ -12,9 +12,10 @@ class DatasimplyApi
       puts response.inspect
     end
 
-    # Returns tags for the most recent 20 filings
-
     # Returns concepts for the most recent 20 filings
-
+    def self.find_concepts
+      response = get("/concepts.json", :headers => { "Authorization" => "Bearer #{ENV['DATASIMPLY_TOKEN']}"})
+      puts response.inspect
+    end
 end
 
