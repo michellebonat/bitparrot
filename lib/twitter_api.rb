@@ -8,7 +8,7 @@ class TwitterApi
     end
 
     def self.rorjobs_tweets
-      client.user_timeline('rorjobs', count: 10, exclude_replies: true, include_rts: false)
+      client.user_timeline('rorjobs', count: 20, exclude_replies: true, include_rts: false)
     end
 
     def self.client
