@@ -15,13 +15,13 @@
         %h1.page-header
           Streaming Stock Information
           %small.pull-right Refresh page to update
-        -#%h2
-        -#  Ruby On Rails News
-        -#  %h4
-        -#    Tweets from @RubyonRailsNews
-        -#%ul
-        -#  - TwitterApi.rornews_tweets.each do |tweet|
-        -#    %li= parsed_tweet tweet
+        %h2
+          Company SEC filings
+          %h4
+            From Data Simply
+        %ul
+          - DatasimplyApi.find_filings.each do |data|
+            %li= parsed_response data
         -#%h2
         -#  Ruby On Rails Content
         -#  %h4

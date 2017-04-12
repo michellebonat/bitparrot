@@ -14,4 +14,13 @@ module ApplicationHelper
 
     _parsed_tweet.html_safe
   end
+
+  def parsed_response data
+    data = ret.parsed_response["data"]
+    data.each do |item|
+      puts item["id"]
+      puts item["type"]
+    end
+  end
+
 end
