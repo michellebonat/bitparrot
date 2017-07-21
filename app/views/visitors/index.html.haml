@@ -36,7 +36,8 @@
       .col-lg-12
         %h1.page-header
           Ruby On Rails Info Stream
-          %small.pull-right Refresh page to update posts
+          %p
+          = link_to 'Refresh to Update Data', root_path, class:  'btn btn-round btn-primary', style: 'margin: 0 0 10px', :method => :get
         %h2
           Ruby On Rails News
           %h4
