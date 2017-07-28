@@ -46,6 +46,13 @@
           - TwitterApi.rornews_tweets.each do |tweet|
             %li= parsed_tweet tweet
         %h2
+          Ruby Inside (content from weekly newsletter)
+          %h4
+            Tweets from @RubyInside
+        %ul
+          - TwitterApi.rubyinside_tweets.each do |tweet|
+            %li= parsed_tweet tweet
+        %h2
           Ruby On Rails Content
           %h4
             Tweets from @RubyonRRails

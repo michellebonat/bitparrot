@@ -10,6 +10,10 @@ class TwitterApi
     def self.rorjobs_tweets
       client.user_timeline('rorjobs', count: 20, exclude_replies: true, include_rts: false)
     end
+    
+    def self.rubyinside_tweets
+      client.user_timeline('rubyinside', count: 20, exclude_replies: true, include_rts: false)
+    end
 
     def self.client
         @client ||= Twitter::REST::Client.new do |config|
