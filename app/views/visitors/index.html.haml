@@ -33,7 +33,7 @@
   .container
     / Marketing Icons Section
     .row
-      .col-lg-12
+      .col-md-9
         %h1.page-header
           Ruby On Rails Info Stream
           %p
@@ -66,6 +66,10 @@
         %ul
           - TwitterApi.rorjobs_tweets.each do |tweet|
             %li= parsed_tweet tweet
+      .row
+        .col-md-3
+          .well
+            = render partial: 'pages/resources'
     -#  .col-md-4
     -#    .panel.panel-default
     -#      .panel-heading
