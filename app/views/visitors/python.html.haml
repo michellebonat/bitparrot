@@ -1,37 +1,5 @@
 %body
-  -#%header#myCarousel.carousel.slide
-  -#  / Indicators
-  -#  -#%ol.carousel-indicators
-  -#  -#  %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
-  -#  -#  %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
-  -#  -#  %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
-  -#  / Wrapper for slides
-  -#  .carousel-inner
-  -#    .item.active
-  -#      .fill
-  -#        = link_to image_tag('jumbotron.jpg')
-  -#      .carousel-caption
-  -#        %h2 So developers can track the info they need
-  -#    / <div class="item">
-  -#    / <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
-  -#    / <div class="carousel-caption">
-  -#    / <h2>Caption 2</h2>
-  -#    / </div>
-  -#    / </div>
-  -#    / <div class="item">
-  -#    / <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
-  -#    / <div class="carousel-caption">
-  -#    / <h2>Caption 3</h2>
-  -#    / </div>
-  -#    / </div>
-  -#  / Controls
-  -#  -#%a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel"}
-  -#  -#  %span.icon-prev
-  -#  -#%a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel"}
-  -#  -#  %span.icon-next
-  -#/ Page Content
   .container
-    / Marketing Icons Section
     .row
       .col-md-9
         %h1.page-header
@@ -39,32 +7,19 @@
           %p
           = link_to 'Refresh Data', root_path, class:  'btn btn-round btn-primary', style: 'margin: 0 0 10px', :method => :get
         %h2
-          Ruby On Rails News
+          Updates from the official Python Software Foundation
           %h4
-            Tweets from @RubyonRailsNews
+            Tweets from @ThePSF aka Python Software
         %ul
-          - TwitterApi.rornews_tweets.each do |tweet|
+          - TwitterApi.thepsf_tweets.each do |tweet|
             %li= parsed_tweet tweet
+
         %h2
-          Ruby Inside (content from weekly newsletter)
+          Podcasts
           %h4
-            Tweets from @RubyInside
+            Tweets from @TalkPython aka Talk Python Podcasts
         %ul
-          - TwitterApi.rubyinside_tweets.each do |tweet|
-            %li= parsed_tweet tweet
-        %h2
-          Ruby On Rails Content
-          %h4
-            Tweets from @RubyonRRails
-        %ul
-          - TwitterApi.railscontent_tweets.each do |tweet|
-            %li= parsed_tweet tweet
-        %h2
-          Ruby On Rails Jobs
-          %h4
-            Tweets from @rorjobs
-        %ul
-          - TwitterApi.rorjobs_tweets.each do |tweet|
+          - TwitterApi.talkpython_tweets.each do |tweet|
             %li= parsed_tweet tweet
       .row
         .col-md-3

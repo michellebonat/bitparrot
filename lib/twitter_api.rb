@@ -15,6 +15,14 @@ class TwitterApi
       client.user_timeline('rubyinside', count: 20, exclude_replies: true, include_rts: false)
     end
 
+    def self.thepsf_tweets
+      client.user_timeline('thepsf', count: 20, exclude_replies: true, include_rts: false)
+    end
+
+    def self.talkpython_tweets
+      client.user_timeline('talkpython', count: 20, exclude_replies: true, include_rts: false)
+    end
+
     def self.client
         @client ||= Twitter::REST::Client.new do |config|
             config.consumer_key        = ENV['TWITTER_CONSUMER_KEY']
