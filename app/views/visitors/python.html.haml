@@ -21,6 +21,14 @@
         %ul
           - TwitterApi.talkpython_tweets.each do |tweet|
             %li= parsed_tweet tweet
+
+        %h2
+          Jobs
+          %h4
+            Tweets from @pyjobo aka Python Jobs Board
+        %ul
+          - TwitterApi.pyjobo_tweets.each do |tweet|
+            %li= parsed_tweet tweet
       .row
         .col-md-3
           .well
