@@ -1,124 +1,23 @@
 %body
   %header#myCarousel.carousel.slide
-    / Indicators
-    -#%ol.carousel-indicators
-    -#  %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
-    -#  %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
-    -#  %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
-    / Wrapper for slides
     .carousel-inner
       .item.active
         .fill
           = link_to image_tag('jumbotron.jpg')
         .carousel-caption
-          %h2 So developers can track the info they need
-      / <div class="item">
-      / <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
-      / <div class="carousel-caption">
-      / <h2>Caption 2</h2>
-      / </div>
-      / </div>
-      / <div class="item">
-      / <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
-      / <div class="carousel-caption">
-      / <h2>Caption 3</h2>
-      / </div>
-      / </div>
-    / Controls
-    -#%a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel"}
-    -#  %span.icon-prev
-    -#%a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel"}
-    -#  %span.icon-next
-  / Page Content
+          %h1 So developers can track info they need
+          %br
+          = link_to 'Ruby Rails Info Stream', ruby_and_rails_path, class:  'btn btn-round btn-lg btn-primary'
+          = link_to 'Python Info Stream', python_path, class:  'btn btn-round btn-lg btn-primary'
+
   .container
-    / Marketing Icons Section
     .row
-      .col-md-9
-        %h1.page-header
-          Ruby On Rails Info Stream
-          %p
-          = link_to 'Refresh Data', root_path, class:  'btn btn-round btn-primary', style: 'margin: 0 0 10px', :method => :get
-        %h2
-          Ruby On Rails News
-          %h4
-            Tweets from @RubyonRailsNews
-        %ul
-          - TwitterApi.rornews_tweets.each do |tweet|
-            %li= parsed_tweet tweet
-        %h2
-          Ruby Inside (content from weekly newsletter)
-          %h4
-            Tweets from @RubyInside
-        %ul
-          - TwitterApi.rubyinside_tweets.each do |tweet|
-            %li= parsed_tweet tweet
-        %h2
-          Ruby On Rails Content
-          %h4
-            Tweets from @RubyonRRails
-        %ul
-          - TwitterApi.railscontent_tweets.each do |tweet|
-            %li= parsed_tweet tweet
-        %h2
-          Ruby On Rails Jobs
-          %h4
-            Tweets from @rorjobs
-        %ul
-          - TwitterApi.rorjobs_tweets.each do |tweet|
-            %li= parsed_tweet tweet
-      .row
-        .col-md-3
-          .well
-            = render partial: 'pages/resources'
-    -#  .col-md-4
-    -#    .panel.panel-default
-    -#      .panel-heading
-    -#        %h4
-    -#          %i.fa.fa-fw.fa-compass
-    -#          Easy to Use
-    -#      .panel-body
-    -#        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?
-    -#        %a.btn.btn-default{:href => "#"} Learn More
-    -#/ /.row
-    -#/ Portfolio Section
-    -#.row
-    -#  .col-lg-12
-    -#    %h2.page-header Portfolio Heading
-    -#  .col-md-4.col-sm-6
-    -#    = link_to page_path('portfolio-item') do
-    -#      %img.img-responsive.img-portfolio.img-hover{:alt => "", :src => "http://placehold.it/700x450"}/
-    -#/ /.row
-    -#/ Features Section
-    -#.row
-    -#  .col-lg-12
-    -#    %h2.page-header Modern Business Features
-    -#  .col-md-6
-    -#    %p The Modern Business template by Start Bootstrap includes:
-    -#    %ul
-    -#      %li
-    -#        %strong Bootstrap v3.2.0
-    -#      %li jQuery v1.11.0
-    -#      %li Font Awesome v4.1.0
-    -#      %li Working PHP contact form with validation
-    -#      %li Unstyled page elements for easy customization
-    -#      %li 17 HTML pages
-    -#    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.
-    -#  .col-md-6
-    -#    %img.img-responsive{:alt => "", :src => "http://placehold.it/700x450"}/
-    / /.row
-    -#%hr/
-    / Call to Action Section
-    -#.well
-    -#  .row
-    -#    .col-md-8
-    -#      %p Coming soon! Content updates by email. Join the list.
-    -#    .col-md-4
-    -#      = link_to 'Sign Up Now', new_user_registration_path, class: 'btn btn-lg btn-success'
-  / /.container
-  / Script to Activate the Carousel
-  :javascript
-    $(document).on('ready', function () {
-      $('.carousel').carousel({
-          interval: 1000 //changes the speed
-      })
-    });
+      .col-lg-12
+        %h3
+          %br
+          %p Want Bit Parrot to track other info for you?
+          %p Tweet Us
+          %ul.list-inline
+            %li
+              %a{:href => "https://twitter.com/bit_parrot"}
+                %i.fa.fa-2x.fa-twitter-square
