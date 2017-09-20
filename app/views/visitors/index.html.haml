@@ -11,7 +11,10 @@
         .fill
           = link_to image_tag('jumbotron.jpg')
         .carousel-caption
-          %h2 So developers can track the info they need
+          %h1 So developers can track info they need
+          %br
+          = link_to 'Ruby Rails Info Stream', ruby_and_rails_path, class:  'btn btn-round btn-lg btn-primary'
+          = link_to 'Python Info Stream', python_path, class:  'btn btn-round btn-lg btn-primary'
       / <div class="item">
       / <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
       / <div class="carousel-caption">
@@ -30,46 +33,46 @@
     -#%a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel"}
     -#  %span.icon-next
   / Page Content
-  .container
-    / Marketing Icons Section
-    .row
-      .col-md-9
-        %h1.page-header
-          Ruby On Rails Info Stream
-          %p
-          = link_to 'Refresh Data', root_path, class:  'btn btn-round btn-primary', style: 'margin: 0 0 10px', :method => :get
-        %h2
-          Ruby On Rails News
-          %h4
-            Tweets from @RubyonRailsNews
-        %ul
-          - TwitterApi.rornews_tweets.each do |tweet|
-            %li= parsed_tweet tweet
-        %h2
-          Ruby Inside (content from weekly newsletter)
-          %h4
-            Tweets from @RubyInside
-        %ul
-          - TwitterApi.rubyinside_tweets.each do |tweet|
-            %li= parsed_tweet tweet
-        %h2
-          Ruby On Rails Content
-          %h4
-            Tweets from @RubyonRRails
-        %ul
-          - TwitterApi.railscontent_tweets.each do |tweet|
-            %li= parsed_tweet tweet
-        %h2
-          Ruby On Rails Jobs
-          %h4
-            Tweets from @rorjobs
-        %ul
-          - TwitterApi.rorjobs_tweets.each do |tweet|
-            %li= parsed_tweet tweet
-      .row
-        .col-md-3
-          .well
-            = render partial: 'pages/resources'
+  -#.container
+  -#  / Marketing Icons Section
+  -#  .row
+  -#    .col-md-9
+  -#      %h1.page-header
+  -#        Ruby On Rails Info Stream
+  -#        %p
+  -#        = link_to 'Refresh Data', root_path, class:  'btn btn-round btn-primary', style: 'margin: 0 0 10px', :method => :get
+  -#      %h2
+  -#        Ruby On Rails News
+  -#        %h4
+  -#          Tweets from @RubyonRailsNews
+  -#      %ul
+  -#        - TwitterApi.rornews_tweets.each do |tweet|
+  -#          %li= parsed_tweet tweet
+  -#      %h2
+  -#        Ruby Inside (content from weekly newsletter)
+  -#        %h4
+  -#          Tweets from @RubyInside
+  -#      %ul
+  -#        - TwitterApi.rubyinside_tweets.each do |tweet|
+  -#          %li= parsed_tweet tweet
+  -#      %h2
+  -#        Ruby On Rails Content
+  -#        %h4
+  -#          Tweets from @RubyonRRails
+  -#      %ul
+  -#        - TwitterApi.railscontent_tweets.each do |tweet|
+  -#          %li= parsed_tweet tweet
+  -#      %h2
+  -#        Ruby On Rails Jobs
+  -#        %h4
+  -#          Tweets from @rorjobs
+  -#      %ul
+  -#        - TwitterApi.rorjobs_tweets.each do |tweet|
+  -#          %li= parsed_tweet tweet
+  -#    .row
+  -#      .col-md-3
+  -#        .well
+  -#          = render partial: 'pages/resources'
     -#  .col-md-4
     -#    .panel.panel-default
     -#      .panel-heading
@@ -116,9 +119,19 @@
     -#      = link_to 'Sign Up Now', new_user_registration_path, class: 'btn btn-lg btn-success'
   / /.container
   / Script to Activate the Carousel
-  :javascript
-    $(document).on('ready', function () {
-      $('.carousel').carousel({
-          interval: 1000 //changes the speed
-      })
-    });
+  -#:javascript
+  -#  $(document).on('ready', function () {
+  -#    $('.carousel').carousel({
+  -#        interval: 1000 //changes the speed
+  -#    })
+  -#  });
+  .container
+    .row
+      .col-lg-12
+        %h2.page-header
+          %p Want Bit Parrot to track other info for you?
+          %p Tweet Us
+          %ul.list-inline
+            %li
+              %a{:href => "https://twitter.com/bit-parrot"}
+                %i.fa.fa-2x.fa-twitter-square
