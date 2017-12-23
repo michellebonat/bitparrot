@@ -1,0 +1,42 @@
+%body
+  .container
+    .row
+      .col-md-9
+        %h1.page-header
+          Python Info Stream
+          %p
+          = link_to 'Refresh Data', machine_learning_path, class:  'btn btn-round btn-primary', style: 'margin: 0 0 10px', :method => :get
+        %h2
+          Updates from the official Python Software Foundation
+          %h4
+            Tweets from @ThePSF aka Python Software
+        %ul
+          - TwitterApi.thepsf_tweets.each do |tweet|
+            %li= parsed_tweet tweet
+
+        %h2
+          Podcasts
+          %h4
+            Tweets from @TalkPython aka Talk Python Podcasts
+        %ul
+          - TwitterApi.talkpython_tweets.each do |tweet|
+            %li= parsed_tweet tweet
+
+        %h2
+          Jobs
+          %h4
+            Tweets from @pyjobo aka Python Jobs Board
+        %ul
+          - TwitterApi.pyjobo_tweets.each do |tweet|
+            %li= parsed_tweet tweet
+      .row
+        .col-md-3
+          .well
+            = render partial: 'pages/resources_python'
+
+  :javascript
+    $(document).on('ready', function () {
+      $('.carousel').carousel({
+          interval: 1000 //changes the speed
+      })
+    });
