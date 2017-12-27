@@ -7,32 +7,24 @@
           %p
           = link_to 'Refresh Data', machine_learning_path, class:  'btn btn-round btn-primary', style: 'margin: 0 0 10px', :method => :get
         %h2
-          Updates from the official Python Software Foundation
+          Updates about #ml #machinelearning #nlp #aicontent curated by top Machine Learning, NLP, AI Influencers via @rightrelevance. Moderated by @vmishrra
           %h4
-            Tweets from @ThePSF aka Python Software
+            Tweets from @ML_toparticles
         %ul
-          - TwitterApi.thepsf_tweets.each do |tweet|
+          - TwitterApi.ml_toparticles_tweets.each do |tweet|
             %li= parsed_tweet tweet
 
         %h2
-          Podcasts
+          Official Twitter feed for Machine Learning thread on Reddit
           %h4
-            Tweets from @TalkPython aka Talk Python Podcasts
+            Tweets from @slashML
         %ul
           - TwitterApi.talkpython_tweets.each do |tweet|
-            %li= parsed_tweet tweet
-
-        %h2
-          Jobs
-          %h4
-            Tweets from @pyjobo aka Python Jobs Board
-        %ul
-          - TwitterApi.pyjobo_tweets.each do |tweet|
             %li= parsed_tweet tweet
       .row
         .col-md-3
           .well
-            = render partial: 'pages/resources_python'
+            = render partial: 'pages/resources_machine_learning'
 
   :javascript
     $(document).on('ready', function () {
