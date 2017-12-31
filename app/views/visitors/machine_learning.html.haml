@@ -1,0 +1,34 @@
+%body
+  .container
+    .row
+      .col-md-9
+        %h1.page-header
+          Machine Learning Info Stream
+          %p
+          = link_to 'Refresh Data', machine_learning_path, class:  'btn btn-round btn-primary', style: 'margin: 0 0 10px', :method => :get
+        %h2
+          Updates about #ml #machinelearning #nlp #aicontent curated by top Machine Learning, NLP, AI Influencers via @rightrelevance. Moderated by @vmishrra
+          %h4
+            Tweets from @ML_toparticles
+        %ul
+          - TwitterApi.ml_toparticles_tweets.each do |tweet|
+            %li= parsed_tweet tweet
+
+        %h2
+          Official Twitter feed for Machine Learning thread on Reddit
+          %h4
+            Tweets from @slashML
+        %ul
+          - TwitterApi.talkpython_tweets.each do |tweet|
+            %li= parsed_tweet tweet
+      .row
+        .col-md-3
+          .well
+            = render partial: 'pages/resources_machine_learning'
+
+  :javascript
+    $(document).on('ready', function () {
+      $('.carousel').carousel({
+          interval: 1000 //changes the speed
+      })
+    });

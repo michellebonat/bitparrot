@@ -10,4 +10,8 @@ class VisitorsController < ApplicationController
   def python
     @meta_title = "Python Developer Info"
   end
+
+  def machine_learning
+    @meta_title = "Machine Learning Developer Info"
+  end
 end

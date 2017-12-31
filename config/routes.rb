@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'pages/contact', to: 'pages#contact', as: :contact
   get 'visitors/ruby_and_rails', to: 'visitors#ruby_and_rails', as: :ruby_and_rails
   get 'visitors/python', to: 'visitors#python', as: :python
+  get 'visitors/machine_learning', to: 'visitors#machine_learning', as: :machine_learning
 end
