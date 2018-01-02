@@ -32,7 +32,11 @@ class TwitterApi
     end
 
     def self.slashml_tweets
-      client.user_timeline('slashML', count: 20, exclude_replies: true, include_rts: false)
+      client.user_timeline('slashml', count: 20, exclude_replies: true, include_rts: false)
+    end
+
+    def self.careersai_tweets
+      client.user_timeline('careersai', count: 20, exclude_replies: true, include_rts: false)
     end
 
     def self.client

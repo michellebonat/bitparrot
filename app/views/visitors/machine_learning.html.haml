@@ -21,6 +21,15 @@
         %ul
           - TwitterApi.talkpython_tweets.each do |tweet|
             %li= parsed_tweet tweet
+
+        %h2
+          Jobs Boards listing by #ODSC: Data Science, Machine Learning, AI, Deep Learning
+          %h4
+            Tweets from @CareersAI
+        %ul
+          - TwitterApi.talkpython_tweets.each do |tweet|
+            %li= parsed_tweet tweet
+
       .row
         .col-md-3
           .well
