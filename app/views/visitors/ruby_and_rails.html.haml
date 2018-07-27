@@ -6,13 +6,13 @@
           Ruby And Rails Info Stream
           %p
           = link_to 'Refresh Data', root_path, class:  'btn btn-round btn-primary', style: 'margin: 0 0 10px', :method => :get
-        %h2
-          Ruby On Rails News
-          %h4
-            Tweets from @RubyonRailsNews
-        %ul
-          - TwitterApi.rornews_tweets.each do |tweet|
-            %li= parsed_tweet tweet
+        -#%h2
+        -#  Ruby On Rails News
+        -#  %h4
+        -#    Tweets from @RubyonRailsNews
+        -#%ul
+        -#  - TwitterApi.rornews_tweets.each do |tweet|
+        -#    %li= parsed_tweet tweet
         %h2
           Ruby Inside (content from weekly newsletter)
           %h4
@@ -20,13 +20,13 @@
         %ul
           - TwitterApi.rubyinside_tweets.each do |tweet|
             %li= parsed_tweet tweet
-        %h2
-          Ruby On Rails Content
-          %h4
-            Tweets from @RubyonRRails
-        %ul
-          - TwitterApi.railscontent_tweets.each do |tweet|
-            %li= parsed_tweet tweet
+        -#%h2
+        -#  Ruby On Rails Content
+        -#  %h4
+        -#    Tweets from @RubyonRRails
+        -#%ul
+        -#  - TwitterApi.railscontent_tweets.each do |tweet|
+        -#    %li= parsed_tweet tweet
         %h2
           Ruby On Rails Jobs
           %h4
