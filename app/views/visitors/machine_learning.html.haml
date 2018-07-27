@@ -6,13 +6,13 @@
           Machine Learning Info Stream
           %p
           = link_to 'Refresh Data', machine_learning_path, class:  'btn btn-round btn-primary', style: 'margin: 0 0 10px', :method => :get
-        %h2
-          Updates about #ml #machinelearning #nlp #aicontent curated by top Machine Learning, NLP, AI Influencers via @rightrelevance. Moderated by @vmishrra
-          %h4
-            Tweets from @ML_toparticles
-        %ul
-          - TwitterApi.ml_toparticles_tweets.each do |tweet|
-            %li= parsed_tweet tweet
+        -#%h2
+        -#  Updates about #ml #machinelearning #nlp #aicontent curated by top Machine Learning, NLP, AI Influencers via @rightrelevance. Moderated by @vmishrra
+        -#  %h4
+        -#    Tweets from @ML_toparticles
+        -#%ul
+        -#  - TwitterApi.ml_toparticles_tweets.each do |tweet|
+        -#    %li= parsed_tweet tweet
 
         %h2
           Official Twitter feed for Machine Learning thread on Reddit
