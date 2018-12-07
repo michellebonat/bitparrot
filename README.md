@@ -3,7 +3,8 @@
 This is the code for the website 
  [BitParrot.co](http://www.bitparrot.co/).
  
-
+ I conceived, designed, and built this myself. I did it because I was tired of tracking all the "bits" I needed to track in separate places so I built this "parrot" that does it for me.  
+ 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
